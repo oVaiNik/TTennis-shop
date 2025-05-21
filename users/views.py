@@ -34,7 +34,7 @@ def login(request):
         form = UserLoginForm()
 
     context = {
-        'title': 'Home - Авторизация',
+        'title': 'Free style - Авторизация',
         'form': form
     }
     return render(request, 'users/login.html', context)
@@ -78,7 +78,7 @@ def profile(request):
         form = ProfileForm(instance=request.user)
     
     context = {
-        'title': 'Home - Профиль',
+        'title': 'Free style - Профиль',
         'form': form
     }
     return render(request, 'users/profile.html', context)

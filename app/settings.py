@@ -88,11 +88,11 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'TTennis-shop',
-        'USER': 'TTennis',
+        'NAME': 'free-style',
+        'USER': 'admin',
         'PASSWORD': 'flower2299',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '5433',
     }
 }
 

@@ -7,7 +7,6 @@ from carts.templatetags.carts_tags import user_carts
 from carts.utils import get_user_carts
 from goods.models import Products
 
-#Событие добавление к корзину
 def cart_add(request):
     product_id = request.POST.get("product_id")
     product = Products.objects.get(id=product_id)
@@ -42,7 +41,6 @@ def cart_add(request):
     return JsonResponse(response_data)
 
 
-#Событии + и -
 def cart_change(request):
     cart_id = request.POST.get("cart_id")
     quantity = request.POST.get("quantity")
@@ -67,7 +65,6 @@ def cart_change(request):
 
 
 
-# Удаление из корзины
 def cart_remove(request):
     cart_id = request.POST.get("cart_id")
     cart = Cart.objects.get(id=cart_id)
