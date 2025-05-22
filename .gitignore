@@ -1,9 +1,11 @@
-.venv/
-.pylintrc
-__pycache__/
+/venv/
+/.pylintrc/
+/__pycache__/
 
-.vscode
-.idea
+/.vscode
+/.idea
 
 db.sqlite3
 media/
+
+*.pyc
