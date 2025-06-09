@@ -62,7 +62,7 @@ def registration(request):
         form = UserRegistrationForm()
 
     context = {
-        'title': 'Home - Регистрация',
+        'title': 'Free style - Регистрация',
         'form': form
     }
     return render(request, 'users/registration.html', context)
@@ -104,3 +104,7 @@ def logout(request):
     messages.success(request, f"{request.user.username}, Вы вышли из аккаунта")    
     auth.logout(request)
     return redirect(reverse('main:index'))
+
+# @login_required
+# def password_reset(request):
+    

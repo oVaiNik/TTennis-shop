@@ -11,32 +11,32 @@
         "model": "goods.categories",
         "pk": 4,
         "fields": {
-            "name": "Готовые ракетки",
-            "slug": "gotovye-raketki"
+            "name": "Футболки",
+            "slug": "futbolki"
         }
     },
     {
         "model": "goods.categories",
         "pk": 5,
         "fields": {
-            "name": "Основания",
-            "slug": "osnovaniya"
+            "name": "Толстовки / Худи",
+            "slug": "tolstovki-hudi"
         }
     },
     {
         "model": "goods.categories",
         "pk": 6,
         "fields": {
-            "name": "Накладки",
-            "slug": "nakladki"
+            "name": "Куртки",
+            "slug": "kurtki"
         }
     },
     {
         "model": "goods.categories",
         "pk": 7,
         "fields": {
-            "name": "Мячи",
-            "slug": "myachi"
+            "name": "Штаны",
+            "slug": "shtany"
         }
     },
     {
