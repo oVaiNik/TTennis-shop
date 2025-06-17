@@ -8,7 +8,7 @@
 {% block content %}
                     <div class="row">
                         <div class="dropdown mb-2">
-                            <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
+                            <button class="btn btn-secondary dropdown-toggle btn-dark btn-f" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Фильтры
                             </button>
@@ -81,7 +81,7 @@
                                                 {% else %}
                                                 {{ product.description|truncatechars:45 }}
                                                 {% endif %}
-                                            {% endautoescape %}
+                                        {% endautoescape %}
                                     </p>
                                     <div class="d-flex justify-content-between">
                                         {% if product.discount %}
@@ -91,12 +91,8 @@
                                         {% else %}
                                             <p><strong>{{ product.price }} ₽.</strong></p>
                                         {% endif %}
-                                        
                                         <a href="{% url "cart:cart_add" %}" class="btn add-to-cart"
                                         data-product-id="{{ product.id }}">
-
-                                        
-
                                             {% csrf_token %}
                                             <img class="mx-1" src="{% static "/deps/icons/cart-plus.svg" %}" alt="Catalog Icon"
                                                 width="32" height="32">
